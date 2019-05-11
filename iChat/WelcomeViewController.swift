@@ -39,4 +39,17 @@ class WelcomeViewController: UIViewController {
         print("dismiss")
     }
     
+    
+    //MARK: Helper functions
+    
+    func dismissKeyboard() {
+        self.view.endEditing(false)
+    }
+    
+    func cleanTextFields() {
+        EmailTextField.text = ""
+        passwordTextField.text = ""
+        repeatPasswordTextField.text = ""
+    }
+    
 }
